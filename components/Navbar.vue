@@ -7,19 +7,17 @@ const paths = [
 
 const route = useRoute();
 const navColor = (path) => {
-  return path === route.fullPath ? "bg-blue-500" : "";
+  return path === route.fullPath ? "bg-blue-500 font-bold" : "";
 };
-
-console.log(route.fullPath);
 </script>
 
 <template>
-  <div class="flex justify-center color-white bg-gray-500 font-bold">
+  <div class="flex justify-center color-white bg-gray-500">
     <NuxtLink
       v-for="path in paths"
       :key="path.route"
       :to="path.route"
-      class="n-link-base p-5 hover:bg-blue-400 w-1/3"
+      class="n-link-base p-4 lg:p-5 w-1/3 transition ease-in-out hover:bg-blue-400 duration-300 hover:font-bold no-underline"
       :class="navColor(path.route)"
     >
       <div class="flex justify-left">

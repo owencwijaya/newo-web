@@ -13,7 +13,7 @@ const props = defineProps({
       :style="{ backgroundImage: `url(${props.image_url})` }"
     ></div>
     <div class="absolute space-y-4 p-8">
-      <h1 class="text-4xl lg:text-8xl font-bold">{{ props.title }}</h1>
+      <h1 class="text-5xl lg:text-8xl font-bold">{{ props.title }}</h1>
       <p class="text-xl lg:text-3xl font-bold">{{ props.description }}</p>
     </div>
   </div>
