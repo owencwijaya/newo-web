@@ -1,7 +1,6 @@
 <template>
   <div class="h-screen flex flex-col bg-gray-500">
     <NuxtLayout>
-      <NuxtLoadingIndicator />
       <NuxtPage />
     </NuxtLayout>
   </div>
